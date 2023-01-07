@@ -1,0 +1,13 @@
+
+‚
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "personas".(”óÏışÿÿÿÿ8®¼ÚÇØ0
+D
+java:S1481")Remove this unused "conn" local variable.(şöì¦ùÿÿÿÿ
+K
+java:S1481")Remove this unused "stmt" local variable.(ù“ƒÎúÿÿÿÿ8 ¹ÒÇØ0
+I
+java:S1481"'Remove this unused "rs" local variable.(ÀÇÄûÿÿÿÿ8Š“ÔÇØ0
+N
+java:S1481",Remove this unused "persona" local variable.(Óƒç”ÿÿÿÿÿ8Š“ÔÇØ0
+D
+java:S1068".Remove this unused "SQL_SELECT" private field.(¹ß¨Ø
