@@ -10,7 +10,12 @@ public class Persona {
 
     public Persona() {
     }
-
+    public Persona(String nombre, String apellido, String email, String telefono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.telefono = telefono;
+    }
     public Persona(Integer idPersona, String nombre, String apellido, String email, String telefono) {
         this.idPersona = idPersona;
         this.nombre = nombre;
@@ -57,5 +62,17 @@ public class Persona {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Persona{");
+        sb.append("idPersona=").append(idPersona);
+        sb.append(", nombre='").append(nombre).append('\'');
+        sb.append(", apellido='").append(apellido).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", telefono='").append(telefono).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
