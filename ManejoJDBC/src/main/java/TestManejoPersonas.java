@@ -5,13 +5,24 @@ import java.util.List;
 
 public class TestManejoPersonas {
     public static void main(String[] args) {
-        PersonaDAO personaDAO = new PersonaDAO();
+        PersonaDAO personaDao = new PersonaDAO();
 
-        Persona personaNueva = new Persona("asdsa", "Depetris","sebadepetris@gmail.com","3451356524");
-        personaDAO.insertar(personaNueva);
+        // Insertando un nuevo objeto de tipo Persona
+        Persona personaNueva = new Persona("Carlos", "Esparza", "cesparza@mail.com", "554456587");
+        personaDao.insertar(personaNueva);
 
-        List<Persona> personas = personaDAO.seleccionar();
-        personas.forEach(System.out::println);
+        // Modificar un objeto de persona existente
+        Persona personaModificar = new Persona(3, "Juan Carlos", "Esparza", "jcesparza@mail.com", "554456587");
+        personaDao.actualizar(personaModificar);
 
+        //Eliminar un registro
+        Persona personaEliminar = new Persona(2);
+        personaDao.eliminar(personaEliminar);
+
+        //Listado Persona
+        List<Persona> personas = personaDao.seleccionar();
+
+        personas.forEach(persona -> System.out.println("persona = " + persona));
     }
+
 }
